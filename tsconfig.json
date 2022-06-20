@@ -26,16 +26,18 @@
     "esModuleInterop": true,
     "module": "esnext",
     "resolveJsonModule": true,
+    "moduleResolution": "NodeNext",
     "isolatedModules": true,
     "jsx": "preserve"
   },
   "include": [
-    // "./components/",
-    // "./pages/",
-    // "./lib/", 
-    // "src/components/Landing", 
-    // "pages/api/withdraw/.js", 
-    // "src/components/LoginWidget/login.jsx"  
+    "./src/components/",
+    "./pages/",
+    "./lib/", 
+    "src/components/Landing", 
+    "pages/api/withdraw/.js", 
+    "src/components/LoginWidget/login.jsx",
+    // "src/components/"
   ],
   "exclude": []
 }
