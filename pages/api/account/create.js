@@ -22,6 +22,8 @@ async function createAccount(req, res) {
   // return res.status(200).json({})
 
   // Reject all methods other than POST.
+  console.log("createAccount", req)
+  
   if (req.method !== 'POST') res.status(405).end();
 
   // Grab the slug and url from the post body.

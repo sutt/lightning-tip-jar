@@ -49,10 +49,14 @@ export async function getData({ endpoint, dispatch }) {
     }
     const response = await fetch(endpoint)
     status = response.status
+    console.log('status', status)
     data   = await response.json()
   }
 
-  catch(e) { err = e }
+  catch(e) { 
+    err = e 
+    data = {}
+  }
 
   finally { 
     dispatch({ 
