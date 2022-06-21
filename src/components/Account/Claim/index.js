@@ -45,7 +45,7 @@ function FormComponent({ user, slug }) {
 
     console.log(formData)
 
-    fetch('/api/account/createAccount', { 
+    fetch('/api/account/create', { 
       body: JSON.stringify(formData), 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' }
