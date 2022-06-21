@@ -4,6 +4,8 @@ export default withSessionRoute(userInfo);
 
 async function userInfo(req, res) {
 
+  console.log("-------------------------------")
+  // console.log("userInfo", req)
   // Reject all methods other than GET.
   if (req.method !== 'GET') res.status(405).end();
 
