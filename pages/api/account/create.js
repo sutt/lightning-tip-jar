@@ -22,8 +22,9 @@ async function createAccount(req, res) {
   // return res.status(200).json({})
 
   // Reject all methods other than POST.
+  console.log("===============================")
   console.log("createAccount", req)
-  
+
   if (req.method !== 'POST') res.status(405).end();
 
   // Grab the slug and url from the post body.
@@ -55,7 +56,7 @@ async function createAccount(req, res) {
     const newAccount = { 
       slug, 
       payRequest : lnurl,
-      adminKey   : session.user.key,
+      adminKey   : "ok", //session.user.key,
       walletKey,
       invoiceKey,
       ...opts 
